@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Ws-zJ-19R">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--竞技场-->
+        <scene sceneID="6kp-nO-Mjy">
+            <objects>
+                <viewController id="okR-mH-RN9" customClass="CZArenaController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fRU-oZ-NND"/>
+                        <viewControllerLayoutGuide type="bottom" id="lHf-X5-ZIN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Xk-y8-Rxx" customClass="CZArenaView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="竞技场" id="v2W-3E-Sgk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFi-c2-HA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1414" y="400"/>
+        </scene>
+        <!--Nav Controller-->
+        <scene sceneID="sZv-Ku-D4O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Ws-zJ-19R" customClass="CZNavController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6xM-Tc-YBr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="okR-mH-RN9" kind="relationship" relationship="rootViewController" id="9KE-u3-F8t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymz-Nv-QKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="400"/>
+        </scene>
+    </scenes>
+</document>

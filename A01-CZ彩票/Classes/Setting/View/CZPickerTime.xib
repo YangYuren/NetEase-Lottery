@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aFV-HS-Yuk" customClass="CZPickerTimeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toolbar_background" translatesAutoresizingMaskIntoConstraints="NO" id="XHr-fd-3cf"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8A-aN-6O7">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4Qp-9j-AW8"/>
+                        <constraint firstAttribute="width" constant="46" id="aSW-Ch-FD6"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="Sure:" destination="aFV-HS-Yuk" eventType="touchUpInside" id="yLv-35-9VK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-Qb-A48">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="B23-vv-G4r"/>
+                        <constraint firstAttribute="width" constant="46" id="cpP-kA-gbo"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="Cancel:" destination="aFV-HS-Yuk" eventType="touchUpInside" id="9zf-N3-Nmr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UX3-Qb-A48" firstAttribute="top" secondItem="aFV-HS-Yuk" secondAttribute="top" constant="7" id="8xE-Cj-T2Y"/>
+                <constraint firstItem="v8A-aN-6O7" firstAttribute="height" secondItem="UX3-Qb-A48" secondAttribute="height" id="Nop-Eq-MXH"/>
+                <constraint firstItem="XHr-fd-3cf" firstAttribute="top" secondItem="aFV-HS-Yuk" secondAttribute="top" id="OF9-PD-uQC"/>
+                <constraint firstAttribute="bottom" secondItem="v8A-aN-6O7" secondAttribute="bottom" constant="7" id="QAA-Bz-ftt"/>
+                <constraint firstItem="UX3-Qb-A48" firstAttribute="leading" secondItem="aFV-HS-Yuk" secondAttribute="leading" constant="16" id="V5h-XW-Fq3"/>
+                <constraint firstItem="v8A-aN-6O7" firstAttribute="leading" secondItem="UX3-Qb-A48" secondAttribute="trailing" constant="251" id="X0u-WN-xix"/>
+                <constraint firstItem="XHr-fd-3cf" firstAttribute="leading" secondItem="aFV-HS-Yuk" secondAttribute="leading" id="bcb-gg-bgc"/>
+                <constraint firstAttribute="trailing" secondItem="XHr-fd-3cf" secondAttribute="trailing" id="dw2-GZ-hj3"/>
+                <constraint firstItem="v8A-aN-6O7" firstAttribute="top" secondItem="aFV-HS-Yuk" secondAttribute="top" constant="7" id="iyc-Fq-QgF"/>
+                <constraint firstItem="v8A-aN-6O7" firstAttribute="width" secondItem="UX3-Qb-A48" secondAttribute="width" id="jUE-fZ-ahf"/>
+                <constraint firstAttribute="bottom" secondItem="UX3-Qb-A48" secondAttribute="bottom" constant="7" id="lQW-wc-NTN"/>
+                <constraint firstAttribute="trailing" secondItem="v8A-aN-6O7" secondAttribute="trailing" constant="16" id="nnj-Od-v6z"/>
+                <constraint firstAttribute="bottom" secondItem="XHr-fd-3cf" secondAttribute="bottom" id="qXh-qg-Jag"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancel" destination="UX3-Qb-A48" id="aEI-HP-WUd"/>
+                <outlet property="sure" destination="v8A-aN-6O7" id="3J8-df-qY4"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="toolbar_background" width="157" height="31"/>
+    </resources>
+</document>
